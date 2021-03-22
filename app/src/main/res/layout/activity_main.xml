@@ -5,14 +5,92 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<!--
+   <ImageView
+       android:id="@+id/image"
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:background="@color/black"
 
+       />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/image"
+        app:layout_constraintLeft_toRightOf="@id/textname"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:inputType="textPersonName"
+         />
     <TextView
+        android:id="@+id/textname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/name"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Name :"
+        app:layout_constraintBaseline_toBaselineOf="@id/name"
+        />
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/image"
+        app:layout_constraintLeft_toRightOf="@id/textprenom"
+        app:layout_constraintTop_toBottomOf="@id/name"
+
+        android:inputType="textPersonName"
+        />
+    <TextView
+        android:id="@+id/textprenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prenom :"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textname"
+        app:layout_constraintBaseline_toBaselineOf="@id/prenom"
+ />
+    <EditText
+        android:id="@+id/classe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/image"
+        app:layout_constraintLeft_toRightOf="@id/textprenom"
+        app:layout_constraintTop_toBottomOf="@id/prenom"
+
+        android:inputType="textPersonName"
+        />
+    <TextView
+        android:id="@+id/textclasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classe :"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textprenom"
+        app:layout_constraintBaseline_toBaselineOf="@id/classe"
+        />
+
+    <EditText
+        android:id="@+id/remarque"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintBottom_toTopOf="@id/enregister"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enregister"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="enregister"
+        />
+-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
